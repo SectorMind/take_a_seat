@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="select-container">
+                <label for="day">Choice</label>
+                <select id="day" class="choice-day">
+                    <option value="day-1">Day 1</option>
+                    <!-- <option value="day-2">Day 2</option> -->
+                </select>
+            </div>
+            <ul class="showcase">
+                <li>
+                    <div class="showcase-category">
+                        <div class="showcase-category__header">
+                            Премиум
+                        </div>
+                        <div class="seat premium"></div>
+                        <div class="price">100 000 ₽</div>
+                        <div class="seat premium-lower-1"></div>
+                        <div class="price">90 000 ₽</div>
+                        <div class="seat premium-lower-2"></div>
+                        <div class="price">80 000 ₽</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="showcase-category">
+                        <div class="showcase-category__header">
+                            VIP
+                        </div>
+                        <div class="seat vip"></div>
+                        <div class="price">50 000 ₽</div>
+                        <div class="seat vip-lower-1"></div>
+                        <div class="price">40 000 ₽</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="showcase-category">
+                        <div class="showcase-category__header">
+                            Бизнес
+                        </div>
+                        <div class="seat business"></div>
+                        <div class="price">25 000 ₽</div>
+                        <div class="seat business-lower-1"></div>
+                        <div class="price">20 000 ₽</div>
+                        <div class="seat business-lower-2"></div>
+                        <div class="price">18 000 ₽</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="showcase-category">
+                        <div class="showcase-category__header">
+                            Стандарт
+                        </div>
+                        <div class="seat standart"></div>
+                        <div class="price">14 000 ₽</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="showcase-category">
+                        Выбрано
+                        <div class="seat selected"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="showcase-category">
+                        Занято
+                        <div class="seat occupied"></div>
+                    </div>
+                </li>
+            </ul>
+            <div class="scene">СЦЕНА</div>
+            <div class="hall">
+                <div class="row row__premium" data-row-id="row-0">
+                    <div class="container-premium">
+                        <div class="container-premium__table"></div>
+                        <div class="container-premium__seat">
+                            <div class="seat premium-lower-2">1</div>
+                            <div class="seat premium-lower-2">2</div>
+                        </div>
+                    </div>
+                    <div class="container-premium">
+                        <div class="container-premium__table"></div>
+                        <div class="container-premium__seat">
+                            <div class="seat premium-lower-2">3</div>
+                            <div class="seat premium-lower-2">4</div>
+                        </div>
+                    </div>
+                    <div class="container-premium">
+                        <div class="container-premium__table"></div>
+                        <div class="container-premium__seat">
+                            <div class="seat premium-lower-1">5</div>
+                            <div class="seat premium-lower-1">6</div>
+                        </div>
+                    </div>
+                    <div class="container-premium">
+                        <div class="container-premium__table"></div>
+                        <div class="container-premium__seat">
+                            <div class="seat premium">7</div>
+                            <div class="seat premium">8</div>
+                        </div>
+                    </div>
+                    <div class="container-premium">
+                        <div class="container-premium__table"></div>
+                        <div class="container-premium__seat">
+                            <div class="seat premium-lower-1">9</div>
+                            <div class="seat premium-lower-1">10</div>
+                        </div>
+                    </div>
+                    <div class="container-premium">
+                        <div class="container-premium__table"></div>
+                        <div class="container-premium__seat">
+                            <div class="seat premium-lower-2">11</div>
+                            <div class="seat premium-lower-2">12</div>
+                        </div>
+                    </div>
+                    <div class="container-premium">
+                        <div class="container-premium__table"></div>
+                        <div class="container-premium__seat">
+                            <div class="seat premium-lower-2">13</div>
+                            <div class="seat premium-lower-2">14</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" data-row-id="row-1">
+                    <div class="row__number">Ряд 1</div>
+                    <div class="seat vip-lower-1">1</div>
+                    <div class="seat vip-lower-1">2</div>
+                    <div class="seat vip-lower-1">3</div>
+                    <div class="seat vip-lower-1">4</div>
+                    <div class="seat vip-lower-1">5</div>
+                    <div class="seat vip">6</div>
+                    <div class="seat vip">7</div>
+                    <div class="seat vip">8</div>
+                    <div class="seat vip">9</div>
+                    <div class="seat vip">10</div>
+                    <div class="seat vip">11</div>
+                    <div class="seat vip">12</div>
+                    <div class="seat vip">13</div>
+                    <div class="seat vip occupied">14</div>
+                    <div class="seat vip">15</div>
+                    <div class="seat vip-lower-1">16</div>
+                    <div class="seat vip-lower-1">17</div>
+                    <div class="seat vip-lower-1">18</div>
+                    <div class="seat vip-lower-1">19</div>
+                    <div class="seat vip-lower-1">20</div>
+                    <div class="row__number">Ряд 1</div>
+                </div>
+                <div class="row" data-row-id="row-2">
+                    <div class="row__number">Ряд 2</div>
+                    <div class="seat vip-lower-1">1</div>
+                    <div class="seat vip-lower-1">2</div>
+                    <div class="seat vip-lower-1 occupied">3</div>
+                    <div class="seat vip-lower-1">4</div>
+                    <div class="seat vip-lower-1">5</div>
+                    <div class="seat vip">6</div>
+                    <div class="seat vip">7</div>
+                    <div class="seat vip">8</div>
+                    <div class="seat vip">9</div>
+                    <div class="seat vip">10</div>
+                    <div class="seat vip">11</div>
+                    <div class="seat vip">12</div>
+                    <div class="seat vip">13</div>
+                    <div class="seat vip">14</div>
+                    <div class="seat vip">15</div>
+                    <div class="seat vip-lower-1">16</div>
+                    <div class="seat vip-lower-1">17</div>
+                    <div class="seat vip-lower-1">18</div>
+                    <div class="seat vip-lower-1">19</div>
+                    <div class="seat vip-lower-1">20</div>
+                    <div class="row__number">Ряд 2</div>
+                </div>
+                <div class="row" data-row-id="row-3">
+                    <div class="row__number">Ряд 3</div>
+                    <div class="seat business-lower-1">1</div>
+                    <div class="seat business-lower-1">2</div>
+                    <div class="seat business-lower-1">3</div>
+                    <div class="seat business-lower-1">4</div>
+                    <div class="seat business-lower-1">5</div>
+                    <div class="seat business-lower-1">6</div>
+                    <div class="seat business">7</div>
+                    <div class="seat business">8</div>
+                    <div class="seat business">9</div>
+                    <div class="seat business">10</div>
+                    <div class="seat business">11</div>
+                    <div class="seat business">12</div>
+                    <div class="seat business">13</div>
+                    <div class="seat business">14</div>
+                    <div class="seat business">15</div>
+                    <div class="seat business">16</div>
+                    <div class="seat business-lower-1">17</div>
+                    <div class="seat business-lower-1">18</div>
+                    <div class="seat business-lower-1">19</div>
+                    <div class="seat business-lower-1">20</div>
+                    <div class="seat business-lower-1">21</div>
+                    <div class="seat business-lower-1">22</div>
+                    <div class="row__number">Ряд 3</div>
+                </div>
+                <div class="row" data-row-id="row-4">
+                    <div class="row__number">Ряд 4</div>
+                    <div class="seat business-lower-1">1</div>
+                    <div class="seat business-lower-1">2</div>
+                    <div class="seat business-lower-1">3</div>
+                    <div class="seat business-lower-1">4</div>
+                    <div class="seat business-lower-1">5</div>
+                    <div class="seat business-lower-1">6</div>
+                    <div class="seat business">7</div>
+                    <div class="seat business">8</div>
+                    <div class="seat business">9</div>
+                    <div class="seat business">10</div>
+                    <div class="seat business">11</div>
+                    <div class="seat business">12</div>
+                    <div class="seat business">13</div>
+                    <div class="seat business">14</div>
+                    <div class="seat business">15</div>
+                    <div class="seat business">16</div>
+                    <div class="seat business-lower-1">17</div>
+                    <div class="seat business-lower-1">18</div>
+                    <div class="seat business-lower-1">19</div>
+                    <div class="seat business-lower-1">20</div>
+                    <div class="seat business-lower-1">21</div>
+                    <div class="seat business-lower-1">22</div>
+                    <div class="row__number">Ряд 4</div>
+                </div>
+                <div class="row" data-row-id="row-5">
+                    <div class="row__number">Ряд 5</div>
+                    <div class="seat business-lower-1">1</div>
+                    <div class="seat business-lower-1">2</div>
+                    <div class="seat business-lower-1">3</div>
+                    <div class="seat business-lower-1">4</div>
+                    <div class="seat business-lower-1">5</div>
+                    <div class="seat business-lower-1">6</div>
+                    <div class="seat business">7</div>
+                    <div class="seat business">8</div>
+                    <div class="seat business">9</div>
+                    <div class="seat business">10</div>
+                    <div class="seat business">11</div>
+                    <div class="seat business">12</div>
+                    <div class="seat business">13</div>
+                    <div class="seat business">14</div>
+                    <div class="seat business">15</div>
+                    <div class="seat business">16</div>
+                    <div class="seat business-lower-1">17</div>
+                    <div class="seat business-lower-1">18</div>
+                    <div class="seat business-lower-1">19</div>
+                    <div class="seat business-lower-1">20</div>
+                    <div class="seat business-lower-1">21</div>
+                    <div class="seat business-lower-1">22</div>
+                    <div class="row__number">Ряд 5</div>
+                </div>
+                <div class="row" data-row-id="row-6">
+                    <div class="row__number">Ряд 6</div>
+                    <div class="seat business-lower-1">1</div>
+                    <div class="seat business-lower-1">2</div>
+                    <div class="seat business-lower-1">3</div>
+                    <div class="seat business-lower-1">4</div>
+                    <div class="seat business-lower-1">5</div>
+                    <div class="seat business-lower-1">6</div>
+                    <div class="seat business">7</div>
+                    <div class="seat business">8</div>
+                    <div class="seat business">9</div>
+                    <div class="seat business">10</div>
+                    <div class="seat business">11</div>
+                    <div class="seat business">12</div>
+                    <div class="seat business">13</div>
+                    <div class="seat business">14</div>
+                    <div class="seat business">15</div>
+                    <div class="seat business">16</div>
+                    <div class="seat business-lower-1">17</div>
+                    <div class="seat business-lower-1">18</div>
+                    <div class="seat business-lower-1">19</div>
+                    <div class="seat business-lower-1">20</div>
+                    <div class="seat business-lower-1">21</div>
+                    <div class="seat business-lower-1">22</div>
+                    <div class="row__number">Ряд 6</div>
+                </div>
+                <div class="row" data-row-id="row-7">
+                    <div class="row__number">Ряд 7</div>
+                    <div class="seat business-lower-2">1</div>
+                    <div class="seat business-lower-2">2</div>
+                    <div class="seat business-lower-2">3</div>
+                    <div class="seat business-lower-2">4</div>
+                    <div class="seat business-lower-2">5</div>
+                    <div class="seat business-lower-2">6</div>
+                    <div class="seat business-lower-1">7</div>
+                    <div class="seat business-lower-1">8</div>
+                    <div class="seat business-lower-1">9</div>
+                    <div class="seat business-lower-1">10</div>
+                    <div class="seat business-lower-1">11</div>
+                    <div class="seat business-lower-1">12</div>
+                    <div class="seat business-lower-1">13</div>
+                    <div class="seat business-lower-1">14</div>
+                    <div class="seat business-lower-1">15</div>
+                    <div class="seat business-lower-1">16</div>
+                    <div class="seat business-lower-2">17</div>
+                    <div class="seat business-lower-2">18</div>
+                    <div class="seat business-lower-2">19</div>
+                    <div class="seat business-lower-2">20</div>
+                    <div class="seat business-lower-2">21</div>
+                    <div class="seat business-lower-2">22</div>
+                    <div class="row__number">Ряд 7</div>
+                </div>
+                <div class="row" data-row-id="row-8">
+                    <div class="row__number">Ряд 8</div>
+                    <div class="seat business-lower-2">1</div>
+                    <div class="seat business-lower-2">2</div>
+                    <div class="seat business-lower-2 occupied">3</div>
+                    <div class="seat business-lower-2 occupied">4</div>
+                    <div class="seat business-lower-2 occupied">5</div>
+                    <div class="seat business-lower-2">6</div>
+                    <div class="seat business-lower-1">7</div>
+                    <div class="seat business-lower-1">8</div>
+                    <div class="seat business-lower-1">9</div>
+                    <div class="seat business-lower-1">10</div>
+                    <div class="seat business-lower-1">11</div>
+                    <div class="seat business-lower-1">12</div>
+                    <div class="seat business-lower-1">13</div>
+                    <div class="seat business-lower-1">14</div>
+                    <div class="seat business-lower-1">15</div>
+                    <div class="seat business-lower-1">16</div>
+                    <div class="seat business-lower-2">17</div>
+                    <div class="seat business-lower-2">18</div>
+                    <div class="seat business-lower-2">19</div>
+                    <div class="seat business-lower-2">20</div>
+                    <div class="seat business-lower-2">21</div>
+                    <div class="seat business-lower-2">22</div>
+                    <div class="row__number">Ряд 8</div>
+                </div>
+                <div class="row" data-row-id="row-9">
+                    <div class="row__number">Ряд 9</div>
+                    <div class="seat business-lower-2">1</div>
+                    <div class="seat business-lower-2">2</div>
+                    <div class="seat business-lower-2">3</div>
+                    <div class="seat business-lower-2">4</div>
+                    <div class="seat business-lower-2">5</div>
+                    <div class="seat business-lower-2">6</div>
+                    <div class="seat business-lower-1">7</div>
+                    <div class="seat business-lower-1">8</div>
+                    <div class="seat business-lower-1">9</div>
+                    <div class="seat business-lower-1">10</div>
+                    <div class="seat business-lower-1">11</div>
+                    <div class="seat business-lower-1">12</div>
+                    <div class="seat business-lower-1">13</div>
+                    <div class="seat business-lower-1">14</div>
+                    <div class="seat business-lower-1">15</div>
+                    <div class="seat business-lower-1">16</div>
+                    <div class="seat business-lower-2">17</div>
+                    <div class="seat business-lower-2">18</div>
+                    <div class="seat business-lower-2">19</div>
+                    <div class="seat business-lower-2">20</div>
+                    <div class="seat business-lower-2">21</div>
+                    <div class="seat business-lower-2">22</div>
+                    <div class="row__number">Ряд 9</div>
+                </div>
+                <div class="row" data-row-id="row-10">
+                    <div class="row__number">Ряд 10</div>
+                    <div class="seat business-lower-2">1</div>
+                    <div class="seat business-lower-2">2</div>
+                    <div class="seat business-lower-2">3</div>
+                    <div class="seat business-lower-2">4</div>
+                    <div class="seat business-lower-2">5</div>
+                    <div class="seat business-lower-2">6</div>
+                    <div class="seat business-lower-1">7</div>
+                    <div class="seat business-lower-1">8</div>
+                    <div class="seat business-lower-1">9</div>
+                    <div class="seat business-lower-1">10</div>
+                    <div class="seat business-lower-1">11</div>
+                    <div class="seat business-lower-1">12</div>
+                    <div class="seat business-lower-1">13</div>
+                    <div class="seat business-lower-1">14</div>
+                    <div class="seat business-lower-1">15</div>
+                    <div class="seat business-lower-1">16</div>
+                    <div class="seat business-lower-2">17</div>
+                    <div class="seat business-lower-2">18</div>
+                    <div class="seat business-lower-2">19</div>
+                    <div class="seat business-lower-2">20</div>
+                    <div class="seat business-lower-2">21</div>
+                    <div class="seat business-lower-2">22</div>
+                    <div class="row__number">Ряд 10</div>
+                </div>
+                <div class="row" data-row-id="row-11">
+                    <div class="row__number">Ряд 11</div>
+                    <div class="seat standart">1</div>
+                    <div class="seat standart">2</div>
+                    <div class="seat standart">3</div>
+                    <div class="seat standart">4</div>
+                    <div class="seat standart">5</div>
+                    <div class="seat standart">6</div>
+                    <div class="seat standart">7</div>
+                    <div class="seat standart occupied">8</div>
+                    <div class="seat standart occupied">9</div>
+                    <div class="seat standart occupied">10</div>
+                    <div class="seat standart occupied">11</div>
+                    <div class="seat standart">12</div>
+                    <div class="seat standart">13</div>
+                    <div class="seat standart">14</div>
+                    <div class="seat standart">15</div>
+                    <div class="seat standart">16</div>
+                    <div class="seat standart">17</div>
+                    <div class="seat standart">18</div>
+                    <div class="seat standart">19</div>
+                    <div class="seat standart">20</div>
+                    <div class="seat standart">21</div>
+                    <div class="seat standart">22</div>
+                    <div class="row__number">Ряд 11</div>
+                </div>
+                <div class="row" data-row-id="row-12">
+                    <div class="row__number">Ряд 12</div>
+                    <div class="seat standart">1</div>
+                    <div class="seat standart">2</div>
+                    <div class="seat standart">3</div>
+                    <div class="seat standart">4</div>
+                    <div class="seat standart">5</div>
+                    <div class="seat standart">6</div>
+                    <div class="seat standart">7</div>
+                    <div class="seat standart">8</div>
+                    <div class="seat standart">9</div>
+                    <div class="seat standart">10</div>
+                    <div class="seat standart">11</div>
+                    <div class="seat standart">12</div>
+                    <div class="seat standart">13</div>
+                    <div class="seat standart">14</div>
+                    <div class="seat standart">15</div>
+                    <div class="seat standart">16</div>
+                    <div class="seat standart">17</div>
+                    <div class="seat standart">18</div>
+                    <div class="seat standart">19</div>
+                    <div class="seat standart">20</div>
+                    <div class="seat standart">21</div>
+                    <div class="seat standart">22</div>
+                    <div class="row__number">Ряд 12</div>
+                </div>
+                <div class="row" data-row-id="row-13">
+                    <div class="row__number">Ряд 13</div>
+                    <div class="seat standart">1</div>
+                    <div class="seat standart">2</div>
+                    <div class="seat standart">3</div>
+                    <div class="seat standart">4</div>
+                    <div class="seat standart">5</div>
+                    <div class="seat standart occupied">6</div>
+                    <div class="seat standart occupied">7</div>
+                    <div class="seat standart">8</div>
+                    <div class="seat standart">9</div>
+                    <div class="seat standart">10</div>
+                    <div class="seat standart">11</div>
+                    <div class="seat standart">12</div>
+                    <div class="seat standart">13</div>
+                    <div class="seat standart">14</div>
+                    <div class="seat standart">15</div>
+                    <div class="seat standart">16</div>
+                    <div class="seat standart">17</div>
+                    <div class="seat standart">18</div>
+                    <div class="seat standart">19</div>
+                    <div class="seat standart">20</div>
+                    <div class="seat standart">21</div>
+                    <div class="seat standart">22</div>
+                    <div class="row__number">Ряд 13</div>
+                </div>
+                <div class="row" data-row-id="row-14">
+                    <div class="row__number">Ряд 14</div>
+                    <div class="seat standart">1</div>
+                    <div class="seat standart">2</div>
+                    <div class="seat standart">3</div>
+                    <div class="seat standart">4</div>
+                    <div class="seat standart">5</div>
+                    <div class="seat standart">6</div>
+                    <div class="seat standart">7</div>
+                    <div class="seat standart">8</div>
+                    <div class="seat standart">9</div>
+                    <div class="seat standart">10</div>
+                    <div class="seat standart">11</div>
+                    <div class="seat standart">12</div>
+                    <div class="seat standart">13</div>
+                    <div class="seat standart">14</div>
+                    <div class="seat standart">15</div>
+                    <div class="seat standart">16</div>
+                    <div class="seat standart">17</div>
+                    <div class="seat standart">18</div>
+                    <div class="seat standart">19</div>
+                    <div class="seat standart occupied">20</div>
+                    <div class="seat standart">21</div>
+                    <div class="seat standart">22</div>
+                    <div class="row__number">Ряд 14</div>
+                </div>
+                <div class="row" data-row-id="row-15">
+                    <div class="row__number">Ряд 15</div>
+                    <div class="seat standart">1</div>
+                    <div class="seat standart">2</div>
+                    <div class="seat standart">3</div>
+                    <div class="seat standart">4</div>
+                    <div class="seat standart">5</div>
+                    <div class="seat standart">6</div>
+                    <div class="seat standart">7</div>
+                    <div class="seat standart">8</div>
+                    <div class="seat standart">9</div>
+                    <div class="seat standart">10</div>
+                    <div class="seat standart">11</div>
+                    <div class="seat standart">12</div>
+                    <div class="seat standart">13</div>
+                    <div class="seat standart occupied">14</div>
+                    <div class="seat standart">15</div>
+                    <div class="seat standart">16</div>
+                    <div class="seat standart">17</div>
+                    <div class="seat standart">18</div>
+                    <div class="seat standart">19</div>
+                    <div class="seat standart">20</div>
+                    <div class="seat standart">21</div>
+                    <div class="seat standart">22</div>
+                    <div class="row__number">Ряд 15</div>
+                </div>
+                <div class="row" data-row-id="row-16">
+                    <div class="row__number">Ряд 16</div>
+                    <div class="seat standart">1</div>
+                    <div class="seat standart">2</div>
+                    <div class="seat standart">3</div>
+                    <div class="seat standart">4</div>
+                    <div class="seat standart">5</div>
+                    <div class="seat standart">6</div>
+                    <div class="seat standart">7</div>
+                    <div class="seat standart">8</div>
+                    <div class="seat standart">9</div>
+                    <div class="seat standart">10</div>
+                    <div class="seat standart">11</div>
+                    <div class="seat standart">12</div>
+                    <div class="seat standart">13</div>
+                    <div class="seat standart">14</div>
+                    <div class="seat standart">15</div>
+                    <div class="seat standart">16</div>
+                    <div class="seat standart">17</div>
+                    <div class="seat standart">18</div>
+                    <div class="seat standart">19</div>
+                    <div class="seat standart">20</div>
+                    <div class="seat standart">21</div>
+                    <div class="seat standart">22</div>
+                    <div class="row__number">Ряд 16</div>
+                </div>
+                <div class="row" data-row-id="row-17">
+                    <div class="row__number">Ряд 17</div>
+                    <div class="seat standart">1</div>
+                    <div class="seat standart">2</div>
+                    <div class="seat standart">3</div>
+                    <div class="seat standart">4</div>
+                    <div class="seat standart">5</div>
+                    <div class="seat standart">6</div>
+                    <div class="seat standart">7</div>
+                    <div class="seat standart">8</div>
+                    <div class="seat standart">9</div>
+                    <div class="seat standart">10</div>
+                    <div class="seat standart">11</div>
+                    <div class="seat standart">12</div>
+                    <div class="seat standart">13</div>
+                    <div class="seat standart">14</div>
+                    <div class="seat standart">15</div>
+                    <div class="seat standart">16</div>
+                    <div class="seat standart">17</div>
+                    <div class="seat standart">18</div>
+                    <div class="seat standart">19</div>
+                    <div class="seat standart">20</div>
+                    <div class="seat standart">21</div>
+                    <div class="seat standart">22</div>
+                    <div class="row__number">Ряд 17</div>
+                </div>
+                <div class="row" data-row-id="row-18">
+                    <div class="row__number">Ряд 18</div>
+                    <div class="seat standart">1</div>
+                    <div class="seat standart">2</div>
+                    <div class="seat standart">3</div>
+                    <div class="seat standart">4</div>
+                    <div class="seat standart">5</div>
+                    <div class="seat standart">6</div>
+                    <div class="seat standart">7</div>
+                    <div class="seat standart">8</div>
+                    <div class="seat standart">9</div>
+                    <div class="seat standart">10</div>
+                    <div class="seat standart">11</div>
+                    <div class="seat standart">12</div>
+                    <div class="seat standart">13</div>
+                    <div class="seat standart">14</div>
+                    <div class="seat standart">15</div>
+                    <div class="seat standart">16</div>
+                    <div class="seat standart">17</div>
+                    <div class="seat standart">18</div>
+                    <div class="seat standart">19</div>
+                    <div class="seat standart">20</div>
+                    <div class="seat standart">21</div>
+                    <div class="seat standart">22</div>
+                    <div class="row__number">Ряд 18</div>
+                </div>
+                <div class="row" data-row-id="row-19">
+                    <div class="row__number">Ряд 19</div>
+                    <div class="seat standart">1</div>
+                    <div class="seat standart">2</div>
+                    <div class="seat standart">3</div>
+                    <div class="seat standart">4</div>
+                    <div class="seat standart">5</div>
+                    <div class="seat standart">6</div>
+                    <div class="seat standart">7</div>
+                    <div class="seat standart">8</div>
+                    <div class="seat standart">9</div>
+                    <div class="seat standart">10</div>
+                    <div class="seat standart">11</div>
+                    <div class="seat standart">12</div>
+                    <div class="seat standart">13</div>
+                    <div class="seat standart">14</div>
+                    <div class="seat standart">15</div>
+                    <div class="seat standart">16</div>
+                    <div class="seat standart">17</div>
+                    <div class="seat standart">18</div>
+                    <div class="seat standart">19</div>
+                    <div class="seat standart">20</div>
+                    <div class="seat standart">21</div>
+                    <div class="seat standart occupied">22</div>
+                    <div class="row__number">Ряд 19</div>
+                </div>
+                <div class="row" data-row-id="row-20">
+                    <div class="row__number">Ряд 20</div>
+                    <div class="seat standart">1</div>
+                    <div class="seat standart">2</div>
+                    <div class="seat standart">3</div>
+                    <div class="seat standart">4</div>
+                    <div class="seat standart">5</div>
+                    <div class="seat standart">6</div>
+                    <div class="seat standart">7</div>
+                    <div class="seat standart">8</div>
+                    <div class="seat standart">9</div>
+                    <div class="seat standart">10</div>
+                    <div class="seat standart">11</div>
+                    <div class="seat standart">12</div>
+                    <div class="seat standart">13</div>
+                    <div class="seat standart">14</div>
+                    <div class="seat standart">15</div>
+                    <div class="seat standart">16</div>
+                    <div class="seat standart">17</div>
+                    <div class="seat standart">18</div>
+                    <div class="seat standart">19</div>
+                    <div class="seat standart">20</div>
+                    <div class="seat standart">21</div>
+                    <div class="seat standart">22</div>
+                    <div class="row__number">Ряд 20</div>
+                </div>
+                <div class="row" data-row-id="row-21">
+                    <div class="row__number">Ряд 21</div>
+                    <div class="seat standart">1</div>
+                    <div class="seat standart">2</div>
+                    <div class="seat standart">3</div>
+                    <div class="seat standart">4</div>
+                    <div class="seat standart">5</div>
+                    <div class="seat standart">6</div>
+                    <div class="seat standart">7</div>
+                    <div class="seat standart">8</div>
+                    <div class="seat standart">9</div>
+                    <div class="seat standart">10</div>
+                    <div class="seat standart">11</div>
+                    <div class="seat standart">12</div>
+                    <div class="seat standart">13</div>
+                    <div class="seat standart">14</div>
+                    <div class="seat standart">15</div>
+                    <div class="seat standart">16</div>
+                    <div class="seat standart">17</div>
+                    <div class="seat standart">18</div>
+                    <div class="seat standart">19</div>
+                    <div class="seat standart">20</div>
+                    <div class="seat standart">21</div>
+                    <div class="seat standart">22</div>
+                    <div class="row__number">Ряд 21</div>
+                </div>
+                <div class="row" data-row-id="row-22">
+                    <div class="row__number">Ряд 22</div>
+                    <div class="seat standart">1</div>
+                    <div class="seat standart">2</div>
+                    <div class="seat standart">3</div>
+                    <div class="seat standart">4</div>
+                    <div class="seat standart">5</div>
+                    <div class="seat standart">6</div>
+                    <div class="seat standart">7</div>
+                    <div class="seat standart">8</div>
+                    <div class="seat standart">9</div>
+                    <div class="seat standart">10</div>
+                    <div class="seat standart">11</div>
+                    <div class="seat standart">12</div>
+                    <div class="seat standart">13</div>
+                    <div class="seat standart">14</div>
+                    <div class="seat standart">15</div>
+                    <div class="seat standart">16</div>
+                    <div class="seat standart">17</div>
+                    <div class="seat standart">18</div>
+                    <div class="seat standart">19</div>
+                    <div class="seat standart">20</div>
+                    <div class="seat standart">21</div>
+                    <div class="seat standart">22</div>
+                    <div class="row__number">Ряд 22</div>
+                </div>
+            </div>
+            <div class="buy-container">
+                <p class="text">
+                    Вы выбрали <span id="count">0</span> мест
+                </p>
+                <p class="text">
+                    на общую сумму <span id="total"></span> ₽
+                </p>
+                <!-- <button id="pay">PAY</button>
+                <button id="test-json">Test JSON</button> -->
+            </div>
+        </div>
+    </section>
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span onclick="closeModal()" style="float: right;">&times;</span>
+            <h2>Modal Header</h2>
+            <p>Input fields:</p>
+            <input type="text" placeholder="Name"><br>
+            <input type="text" placeholder="Last Name"><br>
+            <input type="email" placeholder="Email"><br>
+            <input type="tel" placeholder="Phone"><br>
+            <p id="selectedTickets">Display information about selected tickets:</p>
+            <!-- Additional content -->
+            <button onclick="buyTickets()">Buy</button>
+        </div>
+    </div>
+    <!-- <script src="js/apiRequests.js"></script> -->
+    <script src="js/scripts.js"></script>
+    <!-- <script src="js/testJson.js"></script> -->
+</body>
+
+</html>
